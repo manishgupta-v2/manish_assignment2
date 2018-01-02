@@ -18,8 +18,12 @@
 	ul {
 		list-style: none;
 	}
+	
 	ins{
-		text-decoration-color: orangered;
+		text-decoration: none;
+		border-bottom-style: solid;
+		border-color: #fc3b00;
+		border-bottom-width: 0.1em;
 	}
 
 
@@ -31,36 +35,9 @@
 
 /* Basic */
 
-	@media screen and (max-width: 480px) {
-
-		html, body {
-			min-width: 320px;
-		}
-
-	}
-
-
-/* Type */
-
 	html {
 		font-size: 13pt;
 	}
-
-		@media screen and (max-width: 1280px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
 
 	body {
 		background-color: rgb(255, 253, 253);
@@ -135,10 +112,12 @@
 
 	#one .box{
 		border: solid;
+		border-width: 0.01em;
 		border-color: rgb(172, 172, 172);
-		width: 28em;		
+		width: 25em;		
 		height: 12em; 
-		margin: 1em 1em;
+		margin: 0.8em;
+		font-size: 0.8em;
 	}
 
 	#one .leave_msg_input_box{
@@ -147,10 +126,11 @@
 		height: 20em;
 		position: absolute;
 		z-index: 2;
-		left: 8em;
-		top: 50em;
+		left: 20em;
+		top: 47em;
 		padding: 2em;
-		box-shadow: 1px 1px 1px 4px #888888;
+		box-shadow: 0px 0px 30px 0px #888888;
+    	border: none;
 	}
 
 		#one .leave_msg_input_box span{
@@ -183,11 +163,11 @@
 
 
 	#one .content{
-		width: 92%;
+		width: 82%;
 		float: left;
 		position: relative;
-		padding-bottom: 8%;
-		padding-left: 33em;
+		padding-bottom: 4%;
+		padding-left: 38em;
 	}
 
 		#one .content h2{
@@ -201,12 +181,15 @@
 
 			#one .box .vname .msg_box_left{
 				float: left;
-				width: 20%;
+				width: 10%;
 				text-align: left;
+				border: solid;
+				border-width: 0.05em;
+				margin: 1em;
 			}
 
-				#one .box .vname p{
-					padding: 0em 2em;
+				#one .box .vname img{
+					padding: 0.5em;
 				}
 
 			#one .box .vname .msg_box_right{
@@ -214,6 +197,10 @@
 				width: 80%;
 				text-align: left
 			}
+				
+				#one .box .vname p{
+					padding: 0em 2em;
+				}
 
 	#three .box{
 		display: inline-block;
@@ -221,8 +208,24 @@
 		margin: 0em;
 		height: auto;
 		width: 33%;
-
+	
 	}
+
+	#three .box .stat ul{
+		display: inline-flex;
+	}
+		#three .box .stat li:nth-child(2){
+			float: right;
+			padding-left: 12em;
+		}
+
+		#three .box .cname ins{
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		#three .box .stat .price{
+			color: #fa7a02;
+		}
 
 	#six .box{
 		display: inline-block;
@@ -244,14 +247,14 @@
 		padding: 0em 2em;
 		}
 
-	@media screen and (max-width: 1280px) {
-		width: auto;
-	}
-
 /* Image */
 	
 	.banner a{
 		width: 100%;
+	}
+
+	.banner img{
+		z-index: 1;
 	}
 
 	.box .image{
@@ -271,8 +274,8 @@
 
 	#four .play img{
 		position: absolute;
-		left: 31em;
-		top: 275em;
+		left: 40em;
+		top: 250em;
 		width: 10em;
 		height: 10em;
 		z-index: inherit;
@@ -284,16 +287,10 @@
 		padding-top: 10px;
 	}
 
-	
-	@media screen and (max-width: 980px){
-		#four .play img{
-		position: absolute;
-		left: 21em;
-		top: 228em;
-		width: 8em;
-		height: 8em;
-		z-index: inherit;
-		}
+	#six .social_icon img{
+		width: 1.5em;
+		height: 1.5em;
+		padding-top: 10px;
 	}
 
 
@@ -352,15 +349,15 @@
 		}
 		
 			#one.wrapper.style2 .message_6_part1{
-				display: inline-block;
+				display: inline-flex;
 				width: 100%;
-				padding: 0em 2em;
+				padding: 0em 15em;
 			}
 			
 			#one.wrapper.style2 .message_6_part2{
-				display: inline-block;
+				display: inline-flex;
 				width: 100%;
-				padding: 0em 2em;
+				padding: 0em 15em;
 
 			}
 
@@ -375,6 +372,7 @@
 
 		#two.wrapper.style2 .about_3{
 			display: flex;
+			padding: 0em 16em 0em 15em;
 		}
 
 		#two.wrapper.style2 .about_left{
@@ -399,7 +397,7 @@
 
 		#two.wrapper.style2 .about_right {
 			display: inline-block;
-			width: 40%;
+			width: 38%;
 			padding: 4em;
 		}
 
@@ -412,7 +410,6 @@
 		#two.wrapper.style2 .box{
 				background-color: rgb(223, 217, 217);
 				height: inherit;
-				padding: 1em 1em;
 				display: inline-block;
 				width: 20%;
 			}
@@ -431,12 +428,12 @@
 					
 
 		#three.wrapper.style2 {
-			padding: 4rem 8em;
+			padding: 4em 18em;
 			background-color: #ffffff;
 		}
 
 		#three.wrapper.style2 .content .align-center{
-			padding: 0em 28em;
+			padding: 0em 16em;
 		}
 
 		#five.wrapper.style2 .gallery_6{
@@ -474,12 +471,12 @@
 				}
 
 		#six.wrapper.style2 {
-			padding: 4rem 1rem;
+			padding: 4rem 18rem;
 			width: 100%;			
 		}
 
 		#six.wrapper.style2 .content .align-center{
-			padding: 0em 36em;
+			padding: 0em 18em;
 		}
 
 		#six.wrapper.style2 .vol_4{
@@ -499,7 +496,7 @@
 			background-color: #000;
 			color: #ffffff;
 			display: inline-block;
-			padding: 4em 2em 4em 2em;
+			padding: 4em 14em 4em 16em;
 		}
 			.wrapper.style3 div {
 			display: block;
@@ -521,10 +518,17 @@
 	}
 
 	#header ul li{
-		padding-left: 4.0rem;
+		padding-left: 3.0rem;
 		color: #fa7a02;
+		display: inline-grid;
+		text-align: center;
 		}
 	
+	#header .menu ul{ 
+		display: inline-block;
+		width: 100%;
+	}
+
 	#header .contact_menu{
 		display: inline-flex;
 		width: 100%;
@@ -534,12 +538,17 @@
 		#header .contact_menu .wrapper.style3{
 			display: inline-block;
 			width: 100%;
-			padding: 0em;
+			padding: 0em 17em;
 		}
 
 			#header .contact_menu .wrapper.style3 li{
 				display: inline;
+				color: #ffffff;
 			}
+
+				#header .contact_menu .wrapper.style3 li a{
+					color: #ffffff;
+				}
 
 				#header .contact_menu .wrapper.style3 li img{
 					width: 2em;
@@ -547,9 +556,15 @@
 					padding-top: 1em;
 				}
 
+				#header .contact_menu .wrapper.style3 li img[src$="call.png"]{
+					width: 3em;
+					height: 3em;
+					padding-top: 0em;
+				}
+
 		#header .social_icon{
 			line-height: inherit;
-			padding-right: 10em;
+			padding-right: 18em;
 		}
 
 			#header .social_icon li{
@@ -558,13 +573,23 @@
 			}
 	
 		#header .links{
-			padding: 0.8em;
+			padding: 0.8em 17em;
 			background-color: #ffffff;
 		}
 
 		#header .menu .links li a{
 			color: black;
 			text-decoration: none;
+			line-height: initial;
+		}
+
+			#header .menu .links li a img{
+				width: 15px;
+				height: 15px;
+			}
+
+		#header .links li:first-child a{
+			padding-top: 1em;
 		}
 
 		#header .links li:first-child b{
@@ -575,7 +600,7 @@
 		#header .links li:last-child a{
 			color: rgb(243, 63, 9);
 			padding: 0.6em;
-			margin-left: 20em;
+			margin-left: 3em;
 			border: solid;
 		}
 
@@ -605,6 +630,7 @@
 		background-color: hsl(309, 16%, 61%);
 	}
 		
+
 		.banner > article {
 			background-position: center;
 			background-repeat: no-repeat;
@@ -617,13 +643,70 @@
 			width: 100%;
 		}
 
+		.banner fieldset{
+			position: absolute;
+			top: 22em;
+			left: 33em;
+			z-index: 2;
+			padding: 0.35em 0.625em 0.75em 0em;
+			width: 38%;
+			color: #ffffff;
+			text-align: center;
+			
+		}
+
+		.banner .legend1{
+			font-weight: 600;
+			color: #FFF;
+			font-family: serif;
+			font-size: 3em;
+			padding: 0em 1em;
+		}
+
+			.banner .legend1 ins{
+			text-decoration: none;
+			border-bottom-style: solid;
+			border-color: #fc3b00;
+			}
+
+		.banner .legend2 { 
+			position: absolute; 
+			bottom: -1.4em;
+			left: 12em; 
+			z-index: 4;
+			background:transparent; 
+			border: solid;
+			border-color: white;
+			border-width: 0.1em;
+			font-weight: 400;
+			font-size: 1.2em;
+			width: 8em;
+			padding: 0.5em;
+		}
+
+		.banner fieldset p{
+			padding: 1em;
+		}
+
+		#fieldset_line {
+			position: absolute;
+			top: 10.4em;
+			left: 13.6em;
+			width: 11em;
+			height: 3.3em;
+			z-index: 3;
+			background: url(images/slide01.jpg);
+			background-position: 61.6em -25.4em;
+		}
+
+
 /* Containers */
 
 .container {
-	margin-left: auto;
+	margin-left: auto; 
 	margin-right: auto;
-	width: 80rem;
-	padding: 2rem 2rem 4rem 8rem;
+	width: 100%;
+	padding: 2em 20em 4em 18em;
 	display: inline-flex;
 }
 
@@ -631,13 +714,28 @@
 
 	#footer {
 		padding: 0;
-		background: #000;
+		background: rgb(53, 53, 53);
 		text-align: center;
 	}
+
 		#footer ul{
 			display: inline-block;
-			padding-right: 10rem;
-		
+			padding-right: 5em;
+			width: 100%;
+		}
+
+		#footer ul li:first-child{
+			line-height: 4em;
+		}
+
+		#footer ul li{
+			line-height: 2.5em;
+		}
+
+		#footer .container ul:nth-child(4){
+			display: inline-block;
+			width: inherit;
+			padding: 0em;
 		}
 
 		#footer ul a{
@@ -650,44 +748,220 @@
 			text-decoration: none;
 		}
 
+		#footer .container .quicklink a{
+			width: 100%;
+		}
+
+		#footer .container .tags li:first-child{
+			line-height: 1em;
+		}
+
+		#footer .container .tags li{
+			float: left;
+			padding: 0em;
+			margin: 0.2em;
+		}
+
+
 		.newsletter{
-			background-color: rgb(243, 49, 0);
-			padding: 1rem 22rem;
+			background-color: rgb(216, 44, 1);
+			padding: 0.8em 18em;
 		}
 
 			.newsletter span{
-				display: inline-flex;
+				display: inline-block;
+				width: 100%;
 			}
 
 			.newsletter span label{
 				padding: 0em 1em;
 				height: inherit;
+				font-family: serif;
 			}
 
 				.newsletter span b{
-					font-size: 2em;
+					font-size: 2.2em;
 					color: whitesmoke;
 				}
 				
 				.newsletter span label:nth-child(2){
-					padding-top: 1em;
+					display: inline-flex;
+					margin-top: 1em;
 				}
 
 				.newsletter span label:nth-child(3){
-					padding-top: 1em;
+					display: inline-flex;
+					margin-top: 1em;
 				}
 
 			.newsletter span label input{
-				width: 15em;
-				height: 2.5em;
-				padding-top: 2em;
+				width: 33em;
+				height: 3em;
+				padding-top: 0.5em;
 			}
+				.newsletter span label input[type="button"]{
+						background-color: rgb(216, 44, 1);
+						text-decoration-color: #fdfdfd;
+						color: #f2f2f2;
+						font-size: 0.8em;
+						width: 12em;
+						font-weight: 200;
+				}
 		
 
 		#footer .copyright {
+			background-color: #000;
 			color: rgb(255, 254, 254);
-			font-size: 0.9rem;
+			font-size: 0.8em;
 			margin: 0;
-			padding: 1rem 0rem;
+			padding: 1em 0em;
 			text-align: center;
 		}
+
+/* Media Type Reset*/
+
+@media screen and (max-width: 480px) {
+
+	html, body{
+		font-size: 10pt; 
+		width: 100%;                                                                                                                                                                                                                                                                                                                                                                               
+	}
+}
+
+@media screen and (max-width: 920px) {
+
+	html {
+		font-size: 11pt;                                                                                                                                                                                                                                                                                                                                                                                
+	}
+}
+
+@media screen and (max-width: 1680px) {
+
+	html, body{
+		font-size: 12pt;
+		
+	}
+}
+
+/* Mobile Design upto 480px */
+
+@media screen and (max-width: 480px) {
+
+
+#header{
+	display: inline-block;
+	width: 100%;
+}
+
+#header div{
+display: inline-block;
+width: 100%;
+}
+
+	#header .contact_menu {
+    display: inline-block;
+    width: 100%;
+	}
+
+.banner{
+	display: block;
+	width: 100%;
+}
+
+#one.wrapper.style2{
+	display: inline-block;
+	width: 100%;
+}
+
+	#one .leave_msg_input_box{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+
+	#one .content{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+
+	#one .message_6_part1{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+
+	#one .message_6_part2{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+
+
+
+
+#two.wrapper.style2{
+	display: inline-block;
+	width: 100%;
+}
+
+	#two.wrapper.style2 .content{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+		#two.wrapper.style2 .content .align-center {
+			padding: 0em;
+		}
+
+	#two.wrapper.style2 .about_3{
+		width: 100%;
+		padding: 0em;
+		margin: 0;
+	}
+
+#three.wrapper.style2{
+	display: inline-block;
+	width: 100%;
+}
+
+#four.wrapper.style3{
+	display: inline-block;
+	width: 100%;
+}
+
+#five.wrapper.style2{
+	display: inline-block;
+	width: 100%;
+}
+
+
+#six.wrapper.style2{
+	display: inline-block;
+	width: 100%;
+}
+
+#footer{
+	display: inline-block;
+	width: 100%;
+}
+
+}
+
+/* Tablet Design 480px to 920px */
+
+@media screen and (max-width: 920px){
+	#four .play img{
+	position: absolute;
+	left: 21em;
+	top: 228em;
+	width: 8em;
+	height: 8em;
+	z-index: inherit;
+	}
+}
+
+/* Laptop Design 920px to 1620px */
+
+
+/* Desktop Design 1620px above */
